@@ -16,7 +16,6 @@ spec:
           image:
             acr: cdpx10245db0189c43d396893f4497bf2395test.azurecr.io
             tag: 1.0.18
-            namespace: poc1
   destination:
     server: "https://kubernetes.default.svc"
     namespace: poc1
