@@ -22822,10 +22822,13 @@ metadata:
     app.kubernetes.io/name: argocd-cm
     app.kubernetes.io/part-of: argocd
   name: argocd-cm
+data:
+  application.resourceTrackingMethod: annotation
 ---
 apiVersion: v1
 data:
   redis.server: argocd-redis-ha-haproxy:6379
+  application.namespaces: poc1, poc2
 kind: ConfigMap
 metadata:
   labels:
