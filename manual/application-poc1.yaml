@@ -4,7 +4,7 @@ metadata:
   name: argopoc1
   namespace: poc1
 spec:
-  project: default
+  project: project-one
   source:
     chart: argopoc1
     repoURL: https://github.com/jagpreetstamber/argo-poc/tree/main/poc/charts/testchart
