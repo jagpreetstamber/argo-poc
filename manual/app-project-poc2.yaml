@@ -1,0 +1,7 @@
+kind: AppProject
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: project-one
+spec:
+  sourceNamespaces:
+  - poc2
