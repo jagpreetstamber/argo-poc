@@ -5,6 +5,9 @@ metadata:
   namespace: poc1
 spec:
   project: project-one
+  syncPolicy:
+    automated:
+      prune: true
   source:
     repoURL: https://github.com/jagpreetstamber/argo-poc.git
     path: poc/charts/testchart
@@ -12,10 +15,9 @@ spec:
     helm:
       releaseName: argopoc1
       valuesObject:
-        ingress:
-          image:
-            acr: cdpx10245db0189c43d396893f4497bf2395test.azurecr.io
-            tag: 1.0.18
+        image:
+          acr: cdpx10245db0189c43d396893f4497bf2395test.azurecr.io
+          tag: 1.0.18
   destination:
     server: "https://kubernetes.default.svc"
     namespace: poc1
