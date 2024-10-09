@@ -6,3 +6,9 @@ metadata:
 spec:
   sourceNamespaces:
     - poc1
+  sourceRepos:
+    - "*"
+  destinations:
+    - namespace: poc1
+      server: https://kubernetes.default.svc
+      name: in-cluster
