@@ -6,9 +6,9 @@ metadata:
 spec:
   project: project-one
   source:
-    chart: argopoc1
-    repoURL: https://github.com/jagpreetstamber/argo-poc/tree/main/poc/charts/testchart
-    targetRevision: 1.0.18
+    repoURL: https://github.com/jagpreetstamber/argo-poc.git
+    path: poc/charts/testchart
+    targetRevision: HEAD
     helm:
       releaseName: argopoc1
       valuesObject:
@@ -16,6 +16,7 @@ spec:
           image:
             acr: cdpx10245db0189c43d396893f4497bf2395test.azurecr.io
             tag: 1.0.18
+            namespace: poc1
   destination:
     server: "https://kubernetes.default.svc"
     namespace: poc1
