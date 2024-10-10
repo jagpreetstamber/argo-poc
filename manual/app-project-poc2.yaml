@@ -9,6 +9,6 @@ spec:
   sourceRepos:
     - "*"
   destinations:
-    - namespace: poc1
+    - namespace: poc2
       server: https://kubernetes.default.svc
       name: in-cluster
